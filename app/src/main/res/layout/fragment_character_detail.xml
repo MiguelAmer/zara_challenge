@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imageview_character_image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:scaleType="fitEnd"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/imageview_character_image"
+        android:text="Name: "
+        android:id="@+id/textview_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/textview_character_name"
+        app:layout_constraintTop_toTopOf="@id/textview_name"
+        app:layout_constraintStart_toEndOf="@id/textview_name"
+        android:layout_marginStart="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"/>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/textview_name"
+        android:text="Status: "
+        android:id="@+id/textview_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/textview_character_status"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@id/textview_status"
+        app:layout_constraintTop_toTopOf="@id/textview_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/textview_status"
+        android:text="Species: "
+        android:id="@+id/textview_species"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/textview_character_species"
+        app:layout_constraintTop_toTopOf="@id/textview_species"
+        app:layout_constraintStart_toEndOf="@id/textview_species"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/textview_species"
+        android:text="Gender: "
+        android:id="@+id/textview_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/textview_character_gender"
+        app:layout_constraintTop_toTopOf="@id/textview_gender"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@id/textview_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/textview_gender"
+        android:text="Origin: "
+        android:id="@+id/textview_origin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/textview_character_origin"
+        app:layout_constraintTop_toTopOf="@id/textview_origin"
+        app:layout_constraintStart_toEndOf="@id/textview_origin"
+        android:layout_marginStart="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
